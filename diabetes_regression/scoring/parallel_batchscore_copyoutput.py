@@ -87,5 +87,6 @@ if __name__ == "__main__":
         or args.output_path.strip() == ""
     ):
         print("Missing parameters")
+        exit(1)
     else:
         copy_output(args)
