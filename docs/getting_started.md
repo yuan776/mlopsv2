@@ -225,6 +225,19 @@ resources:
         - master
 ```
 
+3. You need to set up the following variables in the variable group 'devopsforai-aml-vg'. 
+
+| Variable Name            | Short description         |
+| ------------------------ | ------------------------- | 
+|SCORING_DATASET_NAME| the dataset name used as a handle in AML|
+|SCORING_DATASTORE_STORAGE_NAME| the storage account name to store the scoring input and output data|
+|SCORING_DATASTORE_ACCESS_KEY| the access key for the storage account used to store the scoring input and output data|
+|SCORING_DATASTORE_INPUT_CONTAINER| the storage container name for scoring input data|
+|SCORING_DATASTORE_INPUT_FILENAME| the filename for the input data|
+|SCORING_DATASTORE_OUTPUT_CONTAINER| the storage container name for scoring output data|
+|SCORING_DATASTORE_OUTPUT_FILENAME| the filename for the output data|
+
+ebc3amlsa
 ---
 
 The release deployment and batch scoring pipelines have the following behaviors:
